@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7C94A6B5-5199-4310-B49C-C8C4ADADF48E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HowToUseMasony</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>61C6C2954A1E266272DFA646625D0395BC82670F</key>
+		<string>https://github.com/RexMa88/Masonry-Usage----help-you-get-rid-of-NSAutoLayout.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HowToUseMasony.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>61C6C2954A1E266272DFA646625D0395BC82670F</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RexMa88/Masonry-Usage----help-you-get-rid-of-NSAutoLayout.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>61C6C2954A1E266272DFA646625D0395BC82670F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>61C6C2954A1E266272DFA646625D0395BC82670F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HowToUseMasony</string>
+		</dict>
+	</array>
+</dict>
+</plist>

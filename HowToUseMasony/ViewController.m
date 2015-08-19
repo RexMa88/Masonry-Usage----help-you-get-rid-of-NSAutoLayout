@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <Masonry/Masonry.h>
 
+#define padding 10
+
 @interface ViewController ()
 
 @property (strong, nonatomic) UIView *sv;
@@ -45,6 +47,7 @@
     }];
     
     //Make a subView that distance the border of superView 10.
+    /**
     self.sv1 = [UIView new];
     self.sv1.backgroundColor = [UIColor redColor];
     
@@ -52,6 +55,33 @@
     
     [self.sv1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.sv).with.insets(UIEdgeInsetsMake(10, 10, 10, 10));
+    }];
+    **/
+    //Make a two subViews
+    UIView *redViewOne = [[UIView alloc] init];
+    UIView *redViewTwo = [[UIView alloc] init];
+    
+    redViewOne.backgroundColor = [UIColor redColor];
+    redViewTwo.backgroundColor = [UIColor redColor];
+    
+    [self.sv addSubview:redViewOne];
+    [self.sv addSubview:redViewTwo];
+    
+    [redViewOne mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.sv.mas_centerY);
+        make.left.equalTo(self.sv.mas_left).with.offset(padding);
+//        make.top.equalTo(self.sv.mas_top).with.offset(padding);
+        make.right.equalTo(redViewTwo.mas_left).with.offset(-padding);
+        make.height.mas_equalTo(@150);
+        make.width.equalTo(redViewTwo);
+    }];
+    
+    [redViewTwo mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.sv.mas_centerY);
+        make.left.equalTo(redViewOne.mas_right).with.offset(padding);
+        make.right.equalTo(self.sv.mas_right).with.offset(-padding);
+        make.height.mas_equalTo(@150);
+        make.width.equalTo(redViewOne);
     }];
 }
 
