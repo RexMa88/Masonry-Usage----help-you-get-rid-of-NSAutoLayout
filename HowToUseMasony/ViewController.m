@@ -103,6 +103,29 @@
 //        make.height.mas_equalTo(@150);
 //        make.width.equalTo(redViewOne);
 //    }];
+
+
+self.subViewOne = [UIView new];
+    self.subViewOne.backgroundColor = [UIColor redColor];
+    [self.sv addSubview:self.subViewOne];
+    
+    [self.subViewOne mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.sv.mas_left).with.offset(padding);
+        make.top.equalTo(self.sv.mas_top).with.offset(padding);
+        make.height.mas_equalTo(@30);
+        make.width.mas_equalTo(@30);
+    }];
+    
+    self.subViewTwo = [UIView new];
+    self.subViewTwo.backgroundColor = [UIColor redColor];
+    [self.sv addSubview:self.subViewTwo];
+    
+    [self.subViewTwo mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.sv.mas_right).with.offset(padding);
+        make.top.equalTo(self.sv.mas_top).with.offset(60);
+        make.height.mas_equalTo(@100);
+        make.width.mas_equalTo(@100);
+    }];
 }
 
 - (void)translateState:(UIButton *)button{
